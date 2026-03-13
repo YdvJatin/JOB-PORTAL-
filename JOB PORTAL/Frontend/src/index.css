@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #37353e;
+  background-color: #d3dad9;
+}
+
+.btn {
+  @apply px-4 py-2 rounded font-semibold transition-all;
+}
+
+.btn-primary {
+  @apply bg-gray-800 text-white hover:bg-gray-900;
+}
+
+.btn-secondary {
+  @apply bg-yellow-700 text-white hover:bg-yellow-800;
+}
+
+.btn-danger {
+  @apply bg-red-700 text-white hover:bg-red-800;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow border border-gray-400;
+}
+
+.input {
+  @apply w-full px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700 bg-white text-gray-900;
+}
+
+/* Color Hunt Palette Theme */
+.header {
+  @apply bg-gray-800 text-white;
+}
+
+.footer {
+  @apply bg-gray-800 text-gray-200;
+}
+
+.section-header {
+  @apply text-gray-900 border-b-2 border-yellow-700;
+}
